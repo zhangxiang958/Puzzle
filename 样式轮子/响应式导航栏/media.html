@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- viewport 是网页默认宽度和高度，这里设置为设备的屏幕宽高度 -->
+	<!-- 缩放比例为1，即初始大小为屏幕的100% -->
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>响应式布局</title>
+	<!-- 响应式布局主要是用 css3 media-query 属性完成对设备不同的适应 -->
+	<!-- <link rel="stylesheet" media="screen and (max-device-width: 480px)" href="css/media480.css"/>
+	<link rel="stylesheet" media="screen and (min-device-width: 480px) and (max-device-width: 960px)" href="css/media960.css"/> -->
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="navbar" role="navigation">
+		<div class="nav">
+			<h1 class="title">
+        			<a href="#">导航</a>
+        			<div class="btn">
+        				<span class="btn-icon"></span>
+        				<span class="btn-icon"></span>
+        				<span  class="btn-icon"></span>
+        			</div>
+        		</h1>
+			<ul class="menu">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">内容1</a></li>
+				<li><a href="#">内容2</a></li>
+				<li><a href="#">内容3</a></li>
+				<li><a href="#">内容4</a></li>
+			</ul>
+			<p class="hot">
+            			<a href="#">响应式</a>
+            			<a href="#">响应式</a>
+            			<a href="#">响应式</a>
+            			<a href="#">响应式</a>
+        		</p>
+		</div>
+	</div>
+</body>
+</html>

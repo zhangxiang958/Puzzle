@@ -1,0 +1,9 @@
+body {
+	font-size: 62.5%;
+	background-color: red;
+}
+.container {
+	width: 80%;
+	height: 60%;
+	background-color: red; 
+}

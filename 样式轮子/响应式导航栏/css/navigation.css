@@ -1,0 +1,97 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+}
+ul, li, a {
+	margin: 0;
+	padding: 0;
+} 
+a {
+	text-decoration: none;
+}
+.container {
+	margin: 10px auto;
+	width: 90%;
+	max-width: 900px;
+}
+.toggle-menu {
+	display: none;
+	padding: 10px 5px;
+	background: #666;
+	color: #fff;
+}
+.nav {
+	list-style: none;
+	zoom: 1;
+	background: #175e4c;
+}
+.nav:before, .nav:after {
+	content: " ";
+	display: table;
+}
+.nav:after {
+	clear: both;
+}
+.nav ul {
+	list-style: none;
+	width: 9em;
+}
+.nav a {
+	padding: 10px 15px;
+	color: #fff;
+}
+.nav li {
+	position: relative;
+}
+.nav > li {
+	float: left;
+	border-top: 1px solid #104336;
+}
+.nav > li > .parent {
+	background-image: url("http://codepen.io/images/downArrow.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.nav > li > a {
+	display: block;
+}
+.nav li ul {
+	position: absolute;
+	left: -999px;
+}
+.nav > li.hover > ul {
+	left: 0;
+}
+.nav li li.hover ul {
+	left: 100%;
+	top: 0;
+}
+.nav li li a {
+	display: block;
+	position: relative;
+	border-top: 1px solid #175e4c;
+	background: #1d7a62;
+	z-index: 100;
+	
+}
+.nav li li li a {
+	border-top: 1px solid #1d7a62;
+	background: #249578;
+	z-index: 200;
+}
+@media screen and (max-width: 768px) {
+	.active {
+		display: block;
+	}
+	.nav > li {
+		float: none;
+	}
+	.nav ul {
+		display: block;
+		width: 100%;
+	}
+	.nav > li.hover > ul, .nav li li.hover ul {
+		position: static;
+	}
+}

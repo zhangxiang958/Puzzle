@@ -1,0 +1,147 @@
+/*因为网页会随屏幕宽度改变而改变，因此响应式布局不可用绝对宽度*/
+/*比如 width: xx px；要使用百分比*/
+/*那么字体根据现在通常的做法，是在body内设置font-size：62.5%，然后后面都可以用百分比或em*/
+/*一方面渲染效果更好，另一方面是符合响应式布局*/
+/*使用流式布局，即使用 float，好处是自动到下方去，慎用绝对定位*/
+/*图片使用max-width: 100%或100%*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 62.5%;
+}
+.navbar {
+	margin-top: 80px;
+	width: 100%;
+	height: 38px;
+	background: #333;
+}
+.nav {
+	margin: 0 auto;
+	border: 0px solid #ccc;
+}
+.nav ul {
+	list-style: none;
+}
+.nav ul li {
+	height: 38px;
+	text-align: center;
+}
+.nav ul li a {
+	display: block;
+	font-size: 1.6em;
+	color: #fff;
+	text-decoration: none;
+	line-height: 38px;
+}
+/*同一个文件中用 @media screen and (max-device-width: 360px) {
+
+}*/
+@media screen and (max-width: 767px) {
+	.navbar {
+		margin-top: 0;
+		background: #444;
+	}
+	.nav ul li {
+		margin-top: 1px;
+		width: 100%;
+		min-width: 100px;
+		background: #333;
+	}
+	.nav ul li a:hover {
+		background: #f60;
+	}
+	.nav .hot {
+		display: none;
+	}
+	.nav .title {
+		position: relative;
+		width: 100%;
+		height: 38px;
+		border-top: 1px solid #444;
+		background: #333;
+		text-align: center;
+	}
+	.nav .title a {
+		line-height: 38px;
+		color: #f60;
+		text-decoration: none;
+	}
+	.nav .title .btn {
+		position: absolute;
+		top: 1px;
+		right: 5px;
+		padding: 10px;
+		border-radius: 4px;
+		background: #fff;
+		text-align: center;
+		cursor: pointer;
+	}
+	.btn-icon {
+		display: block;
+		width: 20px;
+		height: 2px;
+		border-radius: 1px;
+		background: #888;
+	}
+	 .btn-icon + .btn-icon {
+		margin-top: 4px;
+	}
+}
+@media screen and (min-width: 767px) and (max-width: 1280px) {
+	.nav {
+		width: 100%;
+		height: 38px;
+	}
+	.nav ul li {
+		float: left;
+		width: 14%;
+		float: left;
+	}
+	.nav ul li a:hover {
+		color: #f60;
+	}
+	.nav .hot {
+		display: none;
+	}
+	.nav .title {
+		display: none;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.nav {
+		width: 100%;
+    		height: 38px;
+	}
+	.nav ul li {
+		float: left;
+	}
+	.nav ul li a {
+		padding: 0 30px;
+	}
+	.nav ul li a:hover {
+		color: #f60;
+	}
+	.active {
+		color: #555;
+		background-color: #e7e7e7;
+	}
+	.nav .hot {
+		margin-left: 20px;
+		padding-top: 8px;
+	}
+	.nav .hot a {
+		padding: 0 5px;
+		font-size: 1.2em;
+		color: #fff;
+		text-decoration: none;
+	}
+	.nav .hot a:hover {
+		color: #f60;
+		text-decoration: underline;
+	}
+	.nav .title {
+		display: none;
+	}
+}

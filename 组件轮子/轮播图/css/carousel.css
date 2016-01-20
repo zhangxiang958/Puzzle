@@ -1,0 +1,42 @@
+body {
+	margin: 10px;
+	padding: 10px;
+}
+.carousel {
+
+}
+.carousel-indicators {
+	position: absolute;   /*计数部分绝对定位*/
+	bottom: 10px;      /*距离容器carousel底部10px*/
+	z-index: 15;     /* 设置其在z轴的层级*/
+	/*计数器水平居中*/
+	left: 50%;        /*居中*/
+	width: 60%;    
+	padding-left: 0;       /*消除ol列表原有的样式*/
+	margin-left: -30%;    
+	text-align: center;    /*文字居中*/
+	list-style: none;     /*消除序号*/
+}
+.carousel-indicators li {
+	display: inline-block;    /*水平放置*/
+	margin: 1px;
+	width: 10px;
+	height: 10px;           
+	text-indent: -999px;   /*首行缩进，使用负值会被缩到左边*/
+	cursor: pointer;
+	background-color: #000 \9;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+/*当前状态*/
+.carousel-indicators .active {
+	width: 12px;
+	height: 12px;
+	margin: 0;
+	background-color: #fff;
+}
+.carousel-inner img {
+	width: 40%;
+	height: 80%;
+}

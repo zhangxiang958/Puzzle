@@ -1,0 +1,226 @@
+body {
+	margin: 10px;
+	padding: 10px;
+}
+
+/*隐藏默认的checkbox*/
+input[type="checkbox"] {
+	visibility: hidden;
+}
+input[type="checkbox"] + label {
+	cursor: pointer;
+}
+/*第一个*/
+.checkbox-one {
+	display: inline-block;
+	position: relative;
+}
+input[id="checkbox-input1"] + label {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 9px;      /*框的大小*/
+	border-radius: 5px;
+	border: 1px solid #c1caca;
+	background-color: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .05), inset 0px -15px 10px -12px rgba(0, 0, 0, .05);
+}
+input[id="checkbox-input1"]:checked + label:after {
+	content: '\2715';
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1px 0 0 0;
+	width: 100%;
+	text-align: center;
+	font-size: .4em;      /*叉号的大小*/
+	color: #758794;
+	vertical-align: text-top;
+}
+/*第二个*/
+.checkbox-two {
+	display: inline-block;
+}
+input[id="checkbox-input2"] + label {
+	display: inline-block;
+	position: relative;
+	padding: 18px 20px 18px 23px;
+	width: 213px;
+	border-radius: 1000px;
+	border-top: 1px solid #eca14f;
+	border-bottom: 1px solid #552b09;
+	color: #fff;
+	font-size: 1.7em;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .2); 
+	background-color: #f37900;
+	box-shadow: inset 0 50px 37px -30px rgba(255, 222, 197, .3), 0 0 13px rgba(0, 0, 0, .6);	
+}
+input[id="checkbox-input2"] + label:hover {
+	border-top: 1px solid #fc8c1e;
+	background: #fc8c1e;
+	box-shadow: inset 0 -50px 37px -30px rgba(255, 222, 197, .07), 0 0 13px rgba(0, 0, 0, .6);
+}
+input[id="checkbox-input2"] + label:after {
+	content: ' ';
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	width: 32px;
+	height: 32px;
+	border-radius: 100px;
+	box-shadow: inset 0 16px 40px rgba(0, 0, 0,.4);
+}
+input[id="checkbox-input2"]:checked + label:before {
+	display: block;
+}
+input[id="checkbox-input2"] + label:before {
+	content: ' ';
+	display: none;
+	position: absolute;
+	top: 20px;        
+	right: 16px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	z-index: 999;
+	box-shadow: inset 0 16px 40px #fff;
+}
+/*第三个*/
+.checkbox-three {
+	display: inline-block;
+	position: relative;
+}
+input[id="checkbox-input3"] + label {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 9px;
+	border: 1px solid #c1caca;
+	border-radius: 1000px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .05), inset 0 -15px 10px -12px rgba(0, 0, 0, .05);
+	background-color: #fff;
+}
+input[id="checkbox-input3"]:checked + label:before {
+	content: ' ';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #253c4b;
+	box-shadow: inset 0 15px 23px -10px rgba(187, 230, 240, .3), 0 2px 2px rgba(0, 0, 0, .1);
+	opacity: .8;
+}
+/*第四个*/
+.checkbox-four {
+	display: inline-block;
+	position: relative;
+}
+input[id="checkbox-input4"] + label {
+	display: inline-block;
+	position: absolute;
+	top: -5px;
+	left: 0;
+	padding: 9px;
+	width: 40px;
+	height: 15px;
+	border: 50px;
+	background-color: #fafbfa;
+	transition: all .1s ease-in;
+}
+input[id="checkbox-input4"] + label:before {
+	content: ' ';
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 3px 1px rgba(0, 0, 0, .05), 0 0 1px rgba(0, 0, 0, .3);
+	z-index: 999;
+	transition: box-shadow .1s ease-in;
+}
+input[id="checkbox-input4"]:checked + label:before {
+	content: ' ';
+	position: absolute;
+	left: 30px;          /*滑块移动到什么位置*/
+	border-radius: 100px;
+	transition: all .1s ease-in;
+}
+input[id="checkbox-input4"] + label:after {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 100px;
+	box-shadow: inset 0 0 0 0 #eee, 0 0 1px rgba(0, 0, 0, .4);
+	transition: all .1s ease-in;
+}
+input[id="checkbox-input4"]:checked + label:after {
+	content: ' ';
+	position: absolute;
+	background: #4cda60;
+	font-size: 1.5em;
+	box-shadow: 0 0 1px #4cda60;
+	transition: box-shadow .1s ease-in;
+}
+/*第五个*/
+.checkbox-five {
+	display: inline-block;
+	position: relative;
+}
+input[id="checkbox-input5"] + label {
+	display: inline-block;
+	position: absolute;
+	top: -5px;
+	left: 0;
+	padding: 11px 9px;
+	width: 55px;
+	height: 10px;
+	border-radius: 7px;
+	background: #f78360;
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, .1), 0 0 10px rgba(245, 146, 146, .4);
+}
+input[id="checkbox-input5"]:checked + label {
+	background: #67a5df;
+	box-shadow: inset 0 0 20px rgba(0, 0, 0, .1), 0 0 10px rgba(146, 196, 245, .4);
+}
+input[id="checkbox-input5"] + label:before {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 32px;
+	border-radius: 7px;
+	background: #fff;
+	color: #fff;
+	z-index: 999;
+	box-shadow: 0 0 1px rgba(0, 0, 0, .6);
+}
+input[id="checkbox-input5"]:checked + label:before {
+	left: 50px;
+}
+input[id="checkbox-input5"] + label:after {
+	content: 'OFF';
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px;
+	border-radius: 100px;
+	font-size: 1.2em;
+	font-weight: 700;
+}
+input[id="checkbox-input5"]:checked + label:after {
+	content: 'ON';
+	left: 6px;
+}
+input[id="checkbox-input5"] + label:before, input[id="checkbox-input5"] + label:after{
+	transition: all .1s ease-in;
+}
