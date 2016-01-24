@@ -1,0 +1,55 @@
+.page {
+	width: 960px;
+	/*width: 100%;*/
+	margin: 0 auto;
+}
+.grid-col-two {
+	background: #f3f3f3;
+}
+.col-main {
+	float: left;
+	width: 100%;
+	background: #f3f3f3;
+}
+.col-main .main-warp {
+	margin-left: 200px;
+	padding: 10px;
+	height: 100px;
+	border: 1px dashed #aaa;
+}
+.col-sub {
+	float: left;
+	margin-left: -100%;
+	width: 200px;
+	background: #dbedf6;
+}
+.col-sub .sub-text {
+	padding: 10px;
+	height: 100px;
+	border: 1px dashed #aaa;
+}
+.gird-col-twoL {
+	background: #f3f3f3;
+}
+.col-mainL {
+	float: left;
+	width: 100%;
+	background: #f3f3f3;
+}
+.col-mainL .main-warpL {
+	margin-right: 200px;
+	padding: 10px;
+	height: 100px;
+	border: 1px dashed  #aaa;
+}
+.col-subR {
+	float: left;
+	margin-left: -200px;
+	width: 200px;
+	background: #dbedf6;
+}
+.col-subR .sub-text {
+	padding: 10px;
+	height: 100px;
+	border: 1px dashed #aaa;
+}

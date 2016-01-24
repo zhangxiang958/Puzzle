@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏布局</title>
+	<link rel="stylesheet" href="css/layout-3column.css">
+</head>
+<body>
+	<div class="page">
+		<div class="content">
+			<h3>双飞翼布局</h3>
+			<div class="grid-col-three">
+				<div class="main">
+					<div class="main-warp">
+						main
+					</div>
+				</div>
+				<div class="sub">
+					<div class="sub-text">
+						sub
+					</div>
+				</div>
+				<div class="extra">
+					<div class="extra-text">
+						extra
+					</div>
+				</div>
+			</div>
+			<h3>圣杯布局</h3>
+			<div class="cup">
+				<div class="mainS">
+					main
+				</div>
+				<div class="subS">
+					<div class="sub-textS">
+						sub
+					</div>
+				</div>
+				<div class="extraS">
+					<div class="extra-textS">
+						extra
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	两种布局在视觉上类似，但是在结构实现上有不同，双飞翼布局增加了一个main-warp标签，用于让main展示在合适的位置。
+	圣杯布局是不采取增加标签的最接近完美的三栏布局。
+	通过相对定位与负margin可以做出各种组合，只需修改css
+</body>
+</html>
